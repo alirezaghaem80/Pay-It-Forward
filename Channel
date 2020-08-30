@@ -1,0 +1,4 @@
+recursive https://github.com/TelegramMessenger/MTProxy.git && cd MTProxy
+
+https://core.telegram.org/getProxySecret -o proxy-secret
+https://core.telegram.org/getProxyConfig -o proxy-multi.confhead -c 16 /dev/urandom | xxd -ps
